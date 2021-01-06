@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="PythonJS",
-    version="0.0.3",
+    version="0.0.4",
     author="VivinMeth L V",
     author_email="vivinmeth@gmail.com",
     description="JS Features for python",

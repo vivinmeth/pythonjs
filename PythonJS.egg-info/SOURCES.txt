@@ -1,5 +1,6 @@
 README.md
 setup.py
+PythonJS/Objects.py
 PythonJS/__init__.py
 PythonJS.egg-info/PKG-INFO
 PythonJS.egg-info/SOURCES.txt
