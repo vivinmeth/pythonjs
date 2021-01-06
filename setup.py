@@ -5,13 +5,13 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="PythonJS",
-    version="0.0.1",
+    version="0.0.2",
     author="VivinMeth L V",
     author_email="vivinmeth@gmail.com",
     description="JS Features for python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://gitlab.com/vivinmeth/pythonjs",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
