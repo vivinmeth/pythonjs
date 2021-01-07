@@ -21,4 +21,11 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    project_urls={
+        # 'Documentation': 'https://packaging.python.org/tutorials/distributing-packages/',
+        # 'Funding': 'https://donate.pypi.org',
+        # 'Say Thanks!': 'http://saythanks.io/to/example',
+        'Source': 'https://github.com/vivinmeth/pythonjs',
+        'Tracker': 'https://github.com/vivinmeth/pythonjs/issues',
+    },
 )
