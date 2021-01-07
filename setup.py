@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="PythonJS",
-    version="0.0.81",
+    version="0.9.0",
     author="VivinMeth L V",
     author_email="vivinmeth@gmail.com",
     description="JS Features [like Object, Map] in python.",
@@ -22,9 +22,7 @@ setuptools.setup(
     ],
     python_requires='>=3.6',
     project_urls={
-        # 'Documentation': 'https://packaging.python.org/tutorials/distributing-packages/',
-        # 'Funding': 'https://donate.pypi.org',
-        # 'Say Thanks!': 'http://saythanks.io/to/example',
+        'Documentation': 'https://gitlab.com/vivinmeth/pythonjs/-/wikis/home',
         'Source': 'https://github.com/vivinmeth/pythonjs',
         'Tracker': 'https://gitlab.com/vivinmeth/pythonjs/issues',
     },
