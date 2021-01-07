@@ -5,16 +5,18 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="PythonJS",
-    version="0.0.4",
+    version="0.0.8",
     author="VivinMeth L V",
     author_email="vivinmeth@gmail.com",
-    description="JS Features for python",
+    description="JS Features [like Object, Map] in python.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://gitlab.com/vivinmeth/pythonjs",
+    license="BSD-3-Clause",
+    url="https://github.com/vivinmeth/pythonjs",
     packages=setuptools.find_packages(),
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Development Status :: 2 - Pre-Alpha",
+        "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: BSD License",
         "Operating System :: OS Independent",
     ],
