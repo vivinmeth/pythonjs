@@ -1,7 +1,7 @@
 class Object:
     def __init__(self, obj=None, name=None):
-        self.__methods = [] # 'attributes', 'values', 'set_attribute', 'get_value'
-        self.__class_attrbs = []
+        self.__methods = []  # 'attributes', 'values', 'set_attribute', 'get_value'
+        self.__class_attrs = []
         self.__setup_object()
         self.__name = name if name else id(self)
         if not obj:
@@ -21,15 +21,15 @@ class Object:
                 if attr_type == method_type:
                     self.__methods.append(attr)
                 else:
-                    self.__class_attrbs.append(attr)
+                    self.__class_attrs.append(attr)
 
     def attributes(self):
         attrs = self.__dir__()
-        userattrs = []
+        user_attrs = []
         for attr in attrs:
-            if "__" not in attr and attr not in self.__methods and attr not in self.__class_attrbs:
-                userattrs.append(attr)
-        return userattrs
+            if "__" not in attr and attr not in self.__methods and attr not in self.__class_attrs:
+                user_attrs.append(attr)
+        return user_attrs
 
     def values(self):
         attrs = self.attributes()
@@ -43,6 +43,9 @@ class Object:
 
     def get_value(self, attr):
         return self.__getattribute__(attr)
+
+    def __getitem__(self, attr):
+        return self.get_value(attr)
 
     def __console_output(self):
         attrs = self.attributes()
